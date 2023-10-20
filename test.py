@@ -1,8 +1,7 @@
-
-from MultiRobot.robot import Robot
-from MultiRobot.robot import RobotsSystem
-from MultiRobot.robot import Position
-from MultiRobot.robot import Speed
+from robot import Robot
+from robot import RobotsSystem
+from robot import Position
+from robot import Speed
 import math
 
 if __name__ == '__main__':
@@ -26,7 +25,7 @@ if __name__ == '__main__':
                         Position(x=-sq2, y=-sq2),
                         Position(x=sq2, y=-sq2)],
         edges=[[0, 1], [1, 2], [2, 3], [3, 0], [0, 2], [1, 3]])
-    filename = "./data/EXPf10s05.xlsx"
+    filename = "./EXPf10s05.xlsx"
     Robot4.add_mission(1, filename)
     Robot4.states_update()
     Robot4.status = "working"
