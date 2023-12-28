@@ -712,7 +712,7 @@ class RobotsSystem:
                        self.init_positions[self.edges[0][1]]],
                 edge1=[self.robots[self.edges[0][0]].pos, self.robots[self.edges[0][1]].pos])
         elif self.status == "working":
-            theta_m0 = self.theta_mr
+            theta_m0 = self.theta_m
         for k in range(self.Neg):
             self.d_k[0][k] = distance_robots(
                 self.robots[self.edges[k][0]], self.robots[self.edges[k][1]])
